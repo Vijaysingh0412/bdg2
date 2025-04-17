@@ -88,7 +88,8 @@ function calculateValues() {
         alternateArray.push(i % 2 === 0 ? patternStart : (patternStart === "B" ? "S" : "B"));
     }
     let lastValue = alternateArray[alternateArray.length - 1];
-    document.getElementById("finalSizeResult").innerHTML = `${alternateArray.join(", ")} <strong style="font-size: 24px; color:rgb(0, 102, 255); font-weight: bold;">${lastValue}</strong>`;
+    document.getElementById("finalSizeResult").innerText = `${alternateArray.join(", ")}`;
+    document.getElementById("finalAnswer").innerHTML = `<strong style="font-size: 24px; color:rgb(0, 102, 255); font-weight: bold;">${lastValue}</strong>`;
 
     // Add correct styling logic for valResult
     let valResultElement = document.getElementById("valResult");
@@ -159,5 +160,6 @@ function resetInputs() {
     document.getElementById("valResult").style.backgroundColor = "white";
     document.getElementById("finallResult").innerText = "";
     document.getElementById("sizeResult").innerText = "";
-    document.getElementById("finalSizeResult").innerHTML = "";
+    document.getElementById("finalSizeResult").innerText = "";
+    document.getElementById("finalAnswer").innerHTML = "";
 }
