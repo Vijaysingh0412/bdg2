@@ -1,3 +1,12 @@
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 *{
     text-align: center;
 }
@@ -33,15 +42,31 @@ img{
     flex-direction: column;
 }
 
-.btn{
+.btn {
     background-color: rgb(47, 255, 182);
     width: 100px;
     height: 40px;
-
     border: 1px solid black;
     border-radius: 10px;
-
     font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    outline: none;
+    background-color: rgb(0, 220, 143);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #00ffcc;
+    }
+    to {
+        box-shadow: 0 0 15px #00ffcc;
+    }
 }
 
 .result{
@@ -64,9 +89,21 @@ span{
     background-color: white;
     height: 30px;
     font-size: 20px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    animation: bounce 0.8s ease;
+}
+span:hover {
+    background-color: rgb(255, 255, 153);
+    transform: scale(1.1);
 }
 
 input{
     height: 20px;
     width: 90%;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px #007bff;
 }
