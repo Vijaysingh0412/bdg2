@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculation</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="./assets/logo.png">
+
+    <div class="data">
+       <div>
+        <div>
+            <label for="currentPeriod">Current Period:</label>
+            <input type="number" id="currentPeriod" value="3" autofocus><br>
+           </div>
+    
+           <div>
+            <label for="lastPeriod">Last Period:</label>
+            <input type="number" id="lastPeriod" value="2"><br>
+           </div> 
+
+       </div>
+
+       <div>
+        
+           
+           <div>
+            <label for="currentNumber">Current Number:</label>
+            <input type="number" id="currentNumber" value="6"><br>
+        </div>
+
+            <div>
+                <label for="lastNumber">Last Number:</label>
+            <input type="number" id="lastNumber" value="4"><br>
+            </div>
+       </div>
+
+        <!-- Add button for calculation -->
+        
+    </div>
+    <button class="btn" onclick="calculateValues()">Calculate</button>
+    <button class="btn" onclick="resetInputs()">Reset</button>
+
+    <div class="result">
+        <!-- <h3>Results</h3> -->
+        <p><strong>Combination :</strong> 
+            <span id="finallResult"></span></p>
+        <p><strong>Result:</strong> <span id="valResult"></span></p>
+        <p><strong>Final Size:</strong> <span id="finalSizeResult"></span></p>
+    </div>
+</body>
+</html>

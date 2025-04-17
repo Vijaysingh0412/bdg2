@@ -1,0 +1,72 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(37, 150, 190);
+}
+
+img{
+    border-radius: 20px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+
+    background-color: rgb(47, 255, 182);
+
+    margin: 2rem 0;
+}
+
+.data > div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.data > div > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: rgb(47, 255, 182);
+    width: 100px;
+    height: 40px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.result{
+    border: 1px solid black;
+
+    background-color: rgb(47, 255, 182);
+
+    margin: 2rem 0;
+}
+
+.result > p{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+
+span{
+    background-color: white;
+    height: 30px;
+    font-size: 20px;
+}
+
+input{
+    height: 20px;
+    width: 90%;
+}
